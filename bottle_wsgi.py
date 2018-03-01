@@ -171,7 +171,7 @@ def cancel():
 @route('/<file:path>')
 def returnFile(file):
 	#Ajustez la valeur de 'root' en fonction du serveur
-	return static_file(file,root='/var/www/neural-network')
+	return static_file(file,root='/var/www/nns')
 
 @error(404)
 def error404(code):
