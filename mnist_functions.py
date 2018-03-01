@@ -69,12 +69,12 @@ def homeosthasie(p,inalc,neuron,number_of_spike_old) :
 	if learning_type=="supervised" :
 		for i in np.arange(len(inalc)-1) :
 			if p==inalc[i] :
-				neuron[3][0:(n/10)*i]=threshold_max
-				neuron[3][(n/10)*i:(n/10)*(i+1)]=1.0
-				neuron[3][(n/10)*(i+1):n]=threshold_max
+				neuron[3][0:(n//10)*i]=threshold_max
+				neuron[3][(n//10)*i:(n//10)*(i+1)]=1.0
+				neuron[3][(n//10)*(i+1):n]=threshold_max
 			elif p>=inalc[i] and p<inalc[i+1] :
-				neuron[3][0:(n/10)*i]=threshold_max
-				neuron[3][(n/10)*(i+1):n]=threshold_max
+				neuron[3][0:(n//10)*i]=threshold_max
+				neuron[3][(n//10)*(i+1):n]=threshold_max
 	return [neuron,number_of_spike_old]
 
 def range_random(integer_number) :
