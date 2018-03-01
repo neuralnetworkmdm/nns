@@ -49,7 +49,7 @@ def neuron_initialization(n) :
 	refract=np.zeros(n)
 	threshold=1.0*np.ones(n)
 	if learning_type=="supervised" :
-		threshold[n/10:n]=threshold_max
+		threshold[n//10:n]=threshold_max
 	neuron=[v,last_spike,number_of_spike,threshold,inib_lateral,refract]
 	return neuron
 
