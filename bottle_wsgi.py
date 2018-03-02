@@ -92,7 +92,7 @@ def load():
 	html_vars["timestamp"]=timestamp
 
 	#Pensez à recalculer l'estimation à chaque fois que vous changez de machine (cf : rapport de projet)
-	eta=(125*number_of_img//5000)+7+1 #temps d'apprentissage pour 1000 images + temps de création des résultats (pyplot) + marge
+	eta=(100*number_of_img//5000)+9 #temps d'apprentissage pour 1000 images + temps de création des résultats (pyplot) + marge
 
 	html_vars["eta"]=eta
 
